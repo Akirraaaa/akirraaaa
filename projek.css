@@ -1,0 +1,723 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+header {
+    background-color: rgb(133, 255, 255);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+
+    padding-inline: 20px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+header[scrolled="true"] {
+    height: 50px;
+    border-bottom: solid 0.5px black;
+}
+
+header img {
+    height: 60px;
+    width: fit-content;
+}
+
+header[scrolled="true"] img {
+    height: 30px;
+}
+
+.lambang {
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    height: 100%;
+    line-height: 100px;
+}
+
+header[scrolled="true"] div:not(.menu-items) {
+    height: 100%;
+    line-height: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.mc {
+    opacity: 1;
+    border-bottom: solid 3px blue;
+}
+
+header[scrolled="true"] .mc {
+    transition: none;
+}
+
+.menu {
+    position: relative;
+    padding-inline: 15px;
+    color: black;
+
+    display: inline-block;
+    height: initial;
+    box-sizing: border-box;
+
+    transform: scale(100%);
+    transition: 0.5s;
+}
+
+.menu:hover {
+    color: blue;
+    opacity: 1;
+    transform: scale(120%);
+}
+
+.menu-items {
+    visibility: hidden;
+
+    position: absolute;
+    top: 100%;
+
+    background-color: rgb(255, 250, 243);
+
+    height: fit-content;
+    padding: 5px;
+
+    transform: none;
+}
+
+.menu-items {
+    transform: none;
+}
+
+.little-menu {
+    transform: none;
+    transition: none;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.little-menu:hover {
+    transform: none;
+    color: blue;
+}
+
+main {
+    position: relative;
+    height: fit-content;
+
+    background-color: rgb(250, 250, 250);
+}
+
+main p {
+    margin: 0;
+    font-size: 30px;
+}
+
+main li {
+    font-size: 30px;
+}
+
+article {
+    overflow: auto;
+}
+
+figcaption {
+    margin: 0;
+    font-size: 30px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+figure {
+    margin: 0;
+}
+
+.footer1 {
+    width: 100%;
+    height: 80px;
+  
+    background-color: rgb(29, 29, 29);
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    overflow: hidden;
+}
+  
+.footer1 > * {
+    margin-inline: 80px;
+}
+  
+.footer1 h2 {
+    color: white;
+}
+  
+.footer1 img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+  
+.footer1 a {
+    display: inline-block;
+    margin-inline: 10px;
+}
+  
+.footer1 a:first-child {
+    margin-left: 0;
+}
+  
+.footer1 > *:first-child {
+    margin-right: 0;
+}
+  
+.footer1 > *:last-child {
+    margin-left: 0;
+}
+
+.footer2 {
+    background-color: rgb(29, 29, 29);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+}
+
+/*home page*/
+
+#part1-1 {
+    background-color: rgb(133, 255, 255);
+    height: 600px;
+}
+
+.heading1-1 {
+    font-size: 125px;
+    padding-top: 150px;
+    padding-left: 200px;
+}
+
+.heading1-2 {
+    font-size: 90px;
+    padding-left: 200px;
+    font-weight: lighter;
+}
+
+#part1-2 {
+    background-color: antiquewhite;
+    height: fit-content;
+    border: solid 3px black;
+    margin: 50px;
+    padding: 50px;
+}
+
+.heading1-3 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+#part1-2 img {
+    float: left;
+    height: 300px;
+    width: fit-content;
+    padding-right: 20px;
+}
+
+/*arc page*/
+
+#onepiecevideo1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+.part2-1 {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.part2-1 a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.part2-1 td:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.heading2-1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(83, 83, 80);
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+.table2-2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.table2-2 td:hover {
+    color: black;
+}
+
+.table2-3 {
+    font-weight: bold;
+}
+
+.saga1 {
+    background-color: rgb(204, 255, 255);
+}
+
+.saga2 {
+    background-color: rgb(255, 252, 221);
+}
+
+.saga3 {
+    background-color: rgb(105, 187, 105);
+}
+
+.saga4 {
+    background-color: rgb(226, 170, 114);
+}
+
+.saga5 {
+    background-color: rgb(240, 196, 240);
+}
+
+.saga6 {
+    background-color: rgb(200, 255, 200);
+}
+
+.saga7 {
+    background-color: rgb(127, 158, 252);
+}
+
+.saga8 {
+    background-color: rgb(255, 215, 221);
+}
+
+.saga9 {
+    background-color: rgb(165, 165, 41);
+}
+
+.saga10 {
+    background-color: rgb(230, 74, 105);
+}
+
+.saga11 {
+    background-color: rgb(219, 117, 117);
+}
+
+.saganone {
+    background-color: rgb(61, 61, 61);
+    border-color: rgb(61, 61, 61);
+}
+
+#part2-2 {
+    background-color: antiquewhite;
+    height: fit-content;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 50px;
+}
+
+#part2-2 img {
+    float: left;
+    height: 300px;
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.heading2-2 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*saga page*/
+
+.saga {
+    border: 1px solid black;
+    margin: 60px;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: blue;
+}
+
+.part2-1-1 article {
+    height: fit-content;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px black;
+}
+
+.part2-1-1 img {
+    height: fit-content;
+    width: 450px;
+    float: left;
+    margin-right: 20px;
+}
+
+.part2-1-1 div {
+    font-size: 90px;
+    padding-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2-1-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+}
+
+.part2-1-2 > * {
+    flex: 0 0 auto;
+}
+
+.part2-1-3 {
+    height: fit-content;
+    width: fit-content;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px black;
+}
+
+.part2-1-3:hover {
+    position: fixed;
+    height: 60vh;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+
+    margin: 0;
+    margin-top: 25px;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+}
+
+.part2-1-4 div {
+    margin: 0 !important;
+}
+
+.part2-1-3 div {
+    font-size: 45px;
+    font-weight: bold;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.part2-1-3:hover div {
+    width: fit-content;
+    margin: auto;
+}
+
+.part2-1-4 img {
+    height: fit-content;
+    width: 400px;
+    float: left;
+    margin: 0;
+}
+
+.part2-1-3:hover img {
+    padding-right: 20px;
+}
+
+.part2-1-3 figcaption {
+    display: none;
+    font-weight: normal;
+}
+
+.part2-1-3:hover figcaption {
+    display: block;
+    width: fit-content;
+}
+
+.backto {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.backto a {
+    text-decoration: none;
+}
+
+.backto p {
+    font-size: 15px;
+
+    transform: scale(100%);
+    transition: 0.3s;
+}
+
+.backto p:hover {
+    transform: scale(110%);
+    color: blue;
+}
+
+/*map page*/
+
+.part3-1 {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 80px;
+    padding: 50px;
+
+    position: relative;
+}
+
+.part3-1 img {
+    height: 800px;
+    width: fit-content;
+    border: solid 3px black;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading3-1 {
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.heading3-2 {
+    font-size: 40px;
+}
+
+/*devil fruit page coming soon*/
+/*haki page coming soon*/
+/*marine page coming soon*/
+
+
+.cs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cs1 {
+    background-color: rgb(133, 255, 255);
+    height: 180px;
+    width: 1200px;
+    border: 2px solid black;
+
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.cs1 p {
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.cs2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.cs3 {
+    background-color: antiquewhite;
+    border: 1.5px solid black;
+    border-radius: 22.5px;
+    height: fit-content;
+    width: 400px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cs3 a {
+    text-decoration: none;
+}
+
+.cs3 p {
+    font-size: 35px;
+    color: black;
+
+    transform: scale(100%);
+    transition: 0.3s;
+}
+
+.cs3 p:hover {
+    transform: scale(110%);
+    color: blue;
+}
+
+.cs4 {
+    position: absolute;
+    left: 63%;
+    bottom: 71.1%;
+
+    height: 200px;
+    width: 200px;
+
+    z-index: 10000;
+}
+
+/*profile page*/
+
+.part4-1 {
+    background-color: rgb(103, 255, 97);
+    border-radius: 20px;
+    height: 344px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.part4-1 img {
+    height: 280px;
+    width: 280px;
+    padding-bottom: 20px;
+
+    display: block;
+    transform: scale(100%);
+    transition: 0.5s;
+}
+
+.part4-1 img:hover {
+    transform: scale(110%);
+}
+
+.part4-1 figcaption {
+    background-color: aquamarine;
+    height: 40px;
+    font-size: 25px;
+    border: solid 2px rgb(0, 255, 170);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part4-1 figcaption:hover {
+    color: rgb(82, 82, 255);
+}
+
+.part4-1 a {
+    color: black;
+    text-decoration: none;
+}
+
+/*oda page*/
+
+.part5-1 {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 80px;
+    padding: 50px;
+
+    position: relative;
+}
+
+.part5-1 img {
+    height: 500px;
+    width: fit-content;
+    border: solid 3px black;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading5-1 {
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.heading5-2 {
+    font-size: 40px;
+}

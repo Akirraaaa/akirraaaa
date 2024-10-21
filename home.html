@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece</title>
+    <link rel="stylesheet" href="projek.css">
+</head>
+
+<body>
+    <header>
+        <div class="lambang">
+            <img src="img/onepiece.png">
+        </div>
+
+        <div>
+            <div class="mc menu">
+                <a href="home.html">
+                    Home
+                </a>
+            </div>
+
+            <div class="menu">
+                Profile
+
+                <div class="menu-items">
+                    <a href="strawhats.html" class="little-menu">Straw Hat's</a>
+                    <a href="pirate.html" class="little-menu">Pirate</a>
+                    <a href="marine.html" class="little-menu">Marine</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                Article
+
+                <div class="menu-items">
+                    <a href="map.html" class="little-menu">Map</a>
+                    <a href="saga.html" class="little-menu">Saga</a>
+                    <a href="devilfruit.html" class="little-menu">Devil Fruit</a>
+                    <a href="haki.html" class="little-menu">Haki</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <a href="oda.html">
+                    Eiichiro Oda
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+
+    <main>
+        <section id="part1-1">
+            <article>
+                <p class="heading1-1">Welcome to One Piece World!</p>
+                <p class="heading1-2">A Place Full of <span id="texts">Adventure</span></p>
+
+                <style>
+                    #texts {
+                        display: inline-block;
+
+                        animation: fadeSlide 4s infinite;
+                    }
+
+                    @keyframes fadeSlide {
+                        0% {
+                            opacity: 0;
+                            transform: translate(0, 50%);
+                        }
+
+                        10% {
+                            opacity: 1;
+                            transform: translate(0, 0);
+                        }
+
+                        90% {
+                            opacity: 1;
+                            transform: translate(0, 0);
+                        }
+
+                        100% {
+                            opacity: 0;
+                            transform: translate(0, -50%);
+                        }
+                    }
+                </style>
+
+                <script>
+                    const textsElem = document.getElementById('texts');
+
+                    const textArray = [
+                        'Adventure',
+                        'Friendship',
+                        'Pirates',
+                        'Dreams',
+                        'Freedom',
+                        'Treasure',
+                        'Courage',
+                        'Loyalty',
+                        'Justice',
+                        'Mystery',
+                        'Legacy'
+                    ];
+
+                    let textIndex = 0;
+
+                    textsElem.addEventListener('animationiteration', () => {
+                        textIndex += 1;
+
+                        if (textIndex >= textArray.length) {
+                            textIndex = 0;
+                        }
+
+                        textsElem.innerHTML = textArray[textIndex];
+                    });
+                </script>
+            </article>
+        </section>
+
+        <section id="part1-2">
+            <article>
+                <p class="heading1-3">Apa itu One Piece?</p>
+                <figure>
+                    <img src="img/place.jpeg">
+                </figure>
+                <figcaption>
+                    "One Piece" menceritakan perjalanan Monkey D. Luffy, seorang pemuda yang bermimpi menjadi Raja Bajak
+                    Laut. Setelah memakan Buah Iblis Gomu Gomu no Mi, Luffy memperoleh kemampuan tubuh elastis seperti
+                    karet. Luffy berlayar untuk menemukan harta legendaris bernama "One Piece," yang diyakini akan
+                    memberinya gelar Raja Bajak Laut. Sepanjang petualangannya, Luffy merekrut kru dengan berbagai
+                    kemampuan dan impian unik, seperti Zoro, Nami, Usopp, Sanji, dan lainnya, yang bersama-sama
+                    membentuk Bajak Laut Topi Jerami.
+                </figcaption><br>
+
+                <figcaption>
+                    Ceritanya dimulai di lautan East Blue, di mana Luffy mengumpulkan kru awalnya. Setelah itu, mereka
+                    memasuki Grand Line, laut penuh bahaya di mana para bajak laut terbaik bersaing untuk mencapai "One
+                    Piece." Di Grand Line, mereka terlibat dalam konflik besar dengan Pemerintah Dunia dan Angkatan
+                    Laut, yang berusaha menjaga ketertiban dan menutupi rahasia sejarah dunia.
+                </figcaption><br>
+
+                <figcaption>
+                    Setiap arc berfokus pada petualangan kru dalam menghadapi berbagai musuh kuat, seperti Shichibukai
+                    (tujuh bajak laut terkuat yang bekerja untuk pemerintah), Yonko (empat kaisar bajak laut), dan
+                    Tentara Revolusioner yang menentang Pemerintah Dunia. Mereka juga menjelajahi berbagai pulau dengan
+                    budaya, ras, dan misteri unik. Salah satu tema penting dalam alur cerita adalah rahasia Abad
+                    Kekosongan, periode sejarah yang dihapus oleh Pemerintah Dunia.
+                </figcaption><br>
+
+                <figcaption>
+                    Arc besar seperti Alabasta, Enies Lobby, Marineford, dan Wano Country menggambarkan konflik besar
+                    antara Bajak Laut Topi Jerami dengan kekuatan global, sekaligus memperdalam tema tentang kebebasan,
+                    impian, persahabatan, dan perjuangan melawan penindasan. Pada akhirnya, tujuan Luffy tetap sama:
+                    menemukan "One Piece" dan mewujudkan impiannya untuk menjadi Raja Bajak Laut, sebagaimana yang
+                    didorong oleh Gol D. Roger, sang raja sebelumnya.
+                </figcaption>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer1">
+        <h2>Sosial Media One Piece</h2>
+    
+        <div>
+          <a href="https://youtube.com/@onepieceofficial"><img src="img/youtube.png"></a
+          ><a href="https://twitter.com/Eiichiro_Staff"><img src="img/x.png"></a
+          ><a href="https://instagram.com/onepiece_staff"><img src="img/instagram.png"></a
+          ><a href="https://tiktok.com/@onepiece.staff.official"><img src="img/tiktok.png"></a
+          ><a href="https://one-piece.com"><img src="img/onepieceicon.png"></a>
+        </div>
+    </footer>
+
+    <footer class="footer2">
+        &copy; 2024 - ™All Right Reserved Akira Falaq Asykur
+    </footer>
+</body>
+
+</html>
